@@ -23,18 +23,6 @@ class clientController extends Controller
     {
         return view('client.checkout');
     }
-    public function orders()
-    {
-        return view('admin.orders');
-    }
-    public function login()
-    {
-        return view('client.login');
-    }
-    public function signup()
-    {
-        return view('client.signup');
-    }
     
 }
 

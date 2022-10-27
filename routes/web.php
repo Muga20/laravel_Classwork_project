@@ -37,9 +37,7 @@ Route::get('/', [clientController::class, 'index']);
 Route::get('/shop', [clientController::class, 'shop']);
 Route::get('/cart', [clientController::class, 'cart']);
 Route::get('/checkout', [clientController::class, 'checkout']);
-Route::get('/orders', [clientController::class, 'orders']);
-Route::get('/login', [clientController::class, 'login']);
-Route::get('/signup', [clientController::class, 'signup']);
+
 //client controllers end 
 
 
@@ -47,23 +45,12 @@ Route::get('/signup', [clientController::class, 'signup']);
 Route::get('/admin', [AdminController::class, 'admin']);
 //admin controllers end 
 
-
-
-//category controllers start
-Route::get('/addcategory', [CategoryController::class, 'addcategory']);
-Route::get('/categories', [CategoryController::class, 'categories']);
-//category controllers end 
-
-//side controllers start 
-Route::get('/addslider', [SlideController::class, 'addslider']);
-Route::get('/sliders', [SlideController::class, 'sliders']);
-//side controllers end 
-
-
-//product  controllers start 
-Route::get('/addproduct', [ProductController::class, 'addproduct']);
-Route::get('/product', [ProductController::class, 'product']);
-//product controllers end 
+Route::resources( [
+    'categories' => CategoryController::class,
+    'sliders' => SlideController::class,
+    'products' => ProductController::class,
+    'order' => OrderController::class,
+]);
 
 
 

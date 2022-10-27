@@ -1,5 +1,36 @@
+header
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
 
-<!-- Navbar -->
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{asset('backend/plugins/fontawesome-free/css/all.min.css')}}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="{{asset('backend/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="{{asset('backend/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="{{asset('backend/plugins/jqvmap/jqvmap.min.css')}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{asset('backend/dist/css/adminlte.min.css')}}">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="{{asset('backend/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="{{asset('backend/plugins/daterangepicker/daterangepicker.css')}}">
+  <!-- summernote -->
+  <link rel="stylesheet" href="{{asset('backend/plugins/summernote/summernote-bs4.min.css')}}">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
@@ -34,12 +65,11 @@
           <i class="far fa-comments"></i>
           <span class="badge badge-danger navbar-badge">3</span>
         </a>
-
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="backend/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -50,13 +80,12 @@
               </div>
             </div>
             <!-- Message End -->
-
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="backend/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{asset('backend/dist/img/user8-128x128.jpg')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -67,13 +96,12 @@
               </div>
             </div>
             <!-- Message End -->
-
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="backend/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{asset('backend/dist/img/user3-128x128.jpg')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -84,14 +112,12 @@
               </div>
             </div>
             <!-- Message End -->
-
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
         </div>
       </li>
       <!-- Notifications Dropdown Menu -->
-      
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-bell"></i>

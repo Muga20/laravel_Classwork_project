@@ -2,19 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-      public function addcategory () {
-         return view("admin.addcategory");
+      public function index () {
+        $categories = Category::all();
+         return view("categories.index", compact("categories"));
       }
 
-      public function categories ()
+      public function create ()
       {
-          return view("admin.categories");
+          $category = new Category();
+          return view("categories.create",compact('category'));
+      }
+      public function store()
+      {
       }
 
-    
-  
 }

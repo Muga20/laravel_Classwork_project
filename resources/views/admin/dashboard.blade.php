@@ -1,7 +1,8 @@
 @extends("admin_layout.admin")
 
+@section('content')
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+    <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
@@ -20,7 +21,7 @@
     </div>
     <!-- /.content-header -->
 
-    <!-- Main content -->cate
+    <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
@@ -612,3 +613,5 @@
   </div>
   <!-- /.content-wrapper -->
   
+
+@endsection
