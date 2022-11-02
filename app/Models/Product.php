@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $fillable =['product_name','product_category','product_price','product_description','status'];  // this is the line that allows mass assignment
+    protected $fillable =['product_name','category_id','product_price','product_description','status','product_image'];  // this is the line that allows mass assignment
     use HasFactory;
-
-  
 }
