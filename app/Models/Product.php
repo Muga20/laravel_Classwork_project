@@ -9,4 +9,10 @@ class Product extends Model
 {
     protected $fillable =['product_name','category_id','product_price','product_description','status','product_image'];  // this is the line that allows mass assignment
     use HasFactory;
+
+    public function category()
+    {
+        return $this -> belongsTo(Category::class);
+    }
+ 
 }
