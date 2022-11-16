@@ -40,13 +40,13 @@
           <!-- jquery validation -->
           <div class="card card-primary">
             <div class="card-header">
-              <h3 class="card-title">Edit</small></h3>
+              <h3 class="card-title">Edit Category</small></h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
 <form action="{{route('categories.update', $category->id)}}" method="POST">
+    @method('PUT')
   @csrf
-  @method('PUT')
   @include('categories.form')
 
 </form>

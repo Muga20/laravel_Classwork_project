@@ -1,7 +1,6 @@
 @extends('admin_layout.admin')
 
 @section('content')
-
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -44,16 +43,14 @@
                   @foreach($categories as $id=>$category)
                   <tr>
                     <td>{{$id+1}}</td>
-                    <td>{{$category->category_name}}
-                    </td>
+                    <td>{{$category->category_name}}</td>
                     <td>
-
                       <a href="{{route('categories.edit', $category->id)}}" class="btn btn-primary"><i class="nav-icon fas fa-edit"></i></a>
-
-                       <form action="{{route('categories.destroy', $category->id)}}" method="POST" style="display: inline-block">
+                      <form action="{{route('categories.destroy', $category->id)}}" method="post" style="display: inline-block">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger"><i class="nav-icon fas fa-trash"></i></button>
+                       <button type="submit" id="delete" class="btn btn-danger"><i class="nav-icon fas fa-trash"></i></button>
+                      </form>
                     </td>
                   </tr>
 

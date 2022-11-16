@@ -1,4 +1,5 @@
 
+
 @extends("admin_layout.admin")
 
 @section('content')
@@ -35,10 +36,9 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form action ="{{route('products.store')}}" method="POST" enctype="multipart/form-data" id="quickForm">
+              <form id="quickForm" action="{{route('products.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @include('products.form')
-          
               </form>
             </div>
             <!-- /.card -->
